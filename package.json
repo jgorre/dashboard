@@ -1,0 +1,9 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve@latest -s . -l 3000 --no-clipboard",
+    "dev": "npx serve@latest -s . -l 3000 --no-clipboard"
+  }
+}
