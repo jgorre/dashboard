@@ -737,7 +737,7 @@
     <div class="view" id="view-home">
       <p class="section-label">◉ Work Focus</p>
       <div class="quicklinks-grid">
-        <a class="worklog-box" href="https://docs.google.com/document/d/1ZgbIAM1fRS7E_D14POhT-dJCoi1vGYPZTtGZlfcp4tQ/edit?tab=t.0" id="worklog-link" target="_blank" rel="noopener noreferrer">
+        <a class="worklog-box" id="worklog-link" href="#" target="_blank" rel="noopener noreferrer">
           <div class="worklog-content">
             <span class="worklog-label">Daily Habit</span>
             <span class="worklog-title">Work Log</span>
@@ -745,7 +745,7 @@
           </div>
           <span class="box-watermark">📋</span>
         </a>
-        <a class="worklog-box" href="https://drive.google.com/drive/u/1/folders/16vpRbND70jTMBPVHCANa3rBXJnjjgvpQ" target="_blank" rel="noopener noreferrer">
+        <a class="worklog-box" id="braindumps-link" href="#" target="_blank" rel="noopener noreferrer">
           <div class="worklog-content">
             <span class="worklog-label">Google Drive</span>
             <span class="worklog-title">Work Braindump</span>
@@ -757,7 +757,7 @@
 
       <p class="section-label teal" style="margin-top:2rem;">◉ Personal</p>
       <div class="quicklinks-grid">
-        <a class="worklog-box teal" href="https://app.todoist.com/app/today" target="_blank" rel="noopener noreferrer">
+        <a class="worklog-box teal" id="todoist-link" href="#" target="_blank" rel="noopener noreferrer">
           <div class="worklog-content">
             <span class="worklog-label">Task Manager</span>
             <span class="worklog-title">Todoist</span>
@@ -765,7 +765,7 @@
           </div>
           <span class="box-watermark">✅</span>
         </a>
-        <a class="worklog-box teal" href="https://drive.google.com/drive/u/1/folders/1SKGtFqISJx4VGoG_Hx2NIs6IsPfRTRal" target="_blank" rel="noopener noreferrer">
+        <a class="worklog-box teal" id="fieldnotes-link" href="#" target="_blank" rel="noopener noreferrer">
           <div class="worklog-content">
             <span class="worklog-label">Google Drive</span>
             <span class="worklog-title">Personal Braindump</span>
@@ -806,6 +806,7 @@
     <kbd>/</kbd> to search &nbsp;·&nbsp; <kbd>Esc</kbd> to clear
   </div>
 
+  <script src="config.js"></script>
   <script>
     // ─── SUBSTACK DATA ───
     const substacks = [
@@ -1162,6 +1163,13 @@
     }
 
     // ─── INIT ───
+    // Wire up config links
+    if (typeof DASHBOARD_CONFIG !== 'undefined') {
+      document.getElementById('worklog-link').href = DASHBOARD_CONFIG.workLogUrl;
+      document.getElementById('braindumps-link').href = DASHBOARD_CONFIG.brainDumpsUrl;
+      document.getElementById('todoist-link').href = DASHBOARD_CONFIG.todoistUrl;
+      document.getElementById('fieldnotes-link').href = DASHBOARD_CONFIG.fieldNotesUrl;
+    }
     renderCategories();
     renderCards();
     renderFeatured();
