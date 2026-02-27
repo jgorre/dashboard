@@ -1,0 +1,99 @@
+/* ─── KEYFRAMES ─── */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(18px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.4; }
+  50%      { opacity: 1; }
+}
+
+@keyframes worklogGlow {
+  0%, 100% {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.04),
+      0 4px 20px rgba(0, 0, 0, 0.4),
+      0 0 60px rgba(139, 92, 246, 0.1),
+      0 0 100px rgba(139, 92, 246, 0.06);
+  }
+  50% {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      0 4px 20px rgba(0, 0, 0, 0.4),
+      0 0 80px rgba(139, 92, 246, 0.22),
+      0 0 120px rgba(139, 92, 246, 0.12);
+  }
+}
+
+@keyframes worklogGlowTeal {
+  0%, 100% {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.04),
+      0 4px 20px rgba(0, 0, 0, 0.4),
+      0 0 60px rgba(6, 182, 212, 0.1),
+      0 0 100px rgba(6, 182, 212, 0.06);
+  }
+  50% {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      0 4px 20px rgba(0, 0, 0, 0.4),
+      0 0 80px rgba(6, 182, 212, 0.22),
+      0 0 120px rgba(6, 182, 212, 0.12);
+  }
+}
+
+/* ─── VIEW ENTRANCE ANIMATIONS ─── */
+.view.visible .section-label {
+  animation: fadeSlideIn 0.6s ease 0.05s both;
+}
+.view.visible .card {
+  animation: cardIn var(--speed-slow) both;
+}
+.view.visible .worklog-box {
+  animation: fadeSlideIn 0.6s ease 0.10s both, worklogGlow 4s ease-in-out 1.2s infinite;
+}
+.view.visible .worklog-box.teal {
+  animation: fadeSlideIn 0.6s ease 0.10s both, worklogGlowTeal 4s ease-in-out 1.2s infinite;
+}
+.view.visible .quicklinks-grid:first-of-type .worklog-box:nth-child(1) { animation-delay: 0.10s, 1.2s; }
+.view.visible .quicklinks-grid:first-of-type .worklog-box:nth-child(2) { animation-delay: 0.16s, 1.2s; }
+.view.visible .quicklinks-grid:nth-of-type(2) .worklog-box:nth-child(1) { animation-delay: 0.26s, 1.2s; }
+.view.visible .quicklinks-grid:nth-of-type(2) .worklog-box:nth-child(2) { animation-delay: 0.32s, 1.2s; }
+
+/* ─── STAGGERED CARD ANIMATION ─── */
+.view.visible .card:nth-child(1)  { animation-delay: 0.05s; }
+.view.visible .card:nth-child(2)  { animation-delay: 0.10s; }
+.view.visible .card:nth-child(3)  { animation-delay: 0.15s; }
+.view.visible .card:nth-child(4)  { animation-delay: 0.20s; }
+.view.visible .card:nth-child(5)  { animation-delay: 0.25s; }
+.view.visible .card:nth-child(6)  { animation-delay: 0.30s; }
+.view.visible .card:nth-child(7)  { animation-delay: 0.35s; }
+.view.visible .card:nth-child(8)  { animation-delay: 0.40s; }
+.view.visible .card:nth-child(9)  { animation-delay: 0.45s; }
+.view.visible .card:nth-child(10) { animation-delay: 0.50s; }
+.view.visible .card:nth-child(11) { animation-delay: 0.55s; }
+.view.visible .card:nth-child(12) { animation-delay: 0.60s; }
+
+/* Home featured grid: offset after quicklinks above */
+.view.visible .featured-grid .card:nth-child(1) { animation-delay: 0.42s; }
+.view.visible .featured-grid .card:nth-child(2) { animation-delay: 0.47s; }
+.view.visible .featured-grid .card:nth-child(3) { animation-delay: 0.52s; }
+.view.visible .featured-grid .card:nth-child(4) { animation-delay: 0.57s; }
+.view.visible .featured-grid .card:nth-child(5) { animation-delay: 0.62s; }
+.view.visible .featured-grid .card:nth-child(6) { animation-delay: 0.67s; }

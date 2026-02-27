@@ -1,0 +1,409 @@
+/* ─── SEARCH ─── */
+.search-wrap {
+  position: relative;
+  margin-bottom: 2rem;
+  animation: fadeSlideIn 0.6s ease 0.1s both;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 1rem;
+  pointer-events: none;
+  transition: color var(--speed-base);
+}
+
+.search-input {
+  width: 100%;
+  height: 52px;
+  padding: 0 1.25rem 0 3rem;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color var(--speed-base), box-shadow var(--speed-base);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-subtle);
+}
+
+.search-input:focus ~ .search-icon {
+  color: var(--accent-light);
+}
+
+/* ─── CATEGORY CHIPS ─── */
+.categories {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  animation: fadeSlideIn 0.6s ease 0.15s both;
+}
+
+.chip {
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-xl);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--speed-base);
+  user-select: none;
+}
+
+.chip:hover {
+  background: var(--accent-subtle);
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+.chip.active {
+  background: var(--accent-subtle);
+  border-color: var(--accent);
+  color: var(--accent-light);
+  box-shadow: 0 0 12px var(--accent-subtle);
+}
+
+/* ─── CARDS GRID ─── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ─── CARD ─── */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, var(--bg-card) 0%, rgba(20, 20, 23, 1) 100%);
+  border: 1px solid rgba(39, 39, 42, 0.6);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform var(--speed-slow), box-shadow var(--speed-slow), border-color var(--speed-base), background var(--speed-base);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--accent));
+  background-size: 200% 100%;
+  opacity: 0;
+  transition: opacity var(--speed-base);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 8px 30px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(139, 92, 246, 0.08);
+  background: linear-gradient(180deg, var(--bg-card-hover) 0%, rgba(24, 24, 27, 1) 100%);
+}
+
+.card:hover::before {
+  opacity: 1;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.card:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-emoji {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+  filter: saturate(0.85);
+  transition: transform var(--speed-bounce), filter var(--speed-base);
+}
+
+.card:hover .card-emoji {
+  transform: scale(1.15) rotate(-5deg);
+  filter: saturate(1);
+}
+
+.card-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+  transition: color var(--speed-base);
+}
+
+.card:hover .card-name {
+  color: #fff;
+}
+
+.card-author {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-light);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.02em;
+}
+
+.card-description {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.card-tag {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-xl);
+  background: var(--accent-subtle);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--accent-light);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.card-arrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1rem;
+  color: var(--text-muted);
+  transition: transform var(--speed-base), color var(--speed-base);
+}
+
+.card:hover .card-arrow {
+  transform: translate(4px, -2px);
+  color: var(--accent-light);
+}
+
+/* ─── EMPTY STATE (no search results) ─── */
+.empty-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 1rem;
+  animation: fadeSlideIn 0.4s ease both;
+}
+
+.empty-results-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.empty-results-text {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+/* ─── SECTION LABELS ─── */
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section-label.teal {
+  color: var(--accent-teal-light);
+}
+
+/* ─── FEATURED GRID ─── */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ─── WORK LOG / QUICK LINK BOX ─── */
+.worklog-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, rgba(30,30,35,1) 0%, var(--bg-card) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 4px 20px rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(139, 92, 246, 0.1),
+    0 0 100px rgba(139, 92, 246, 0.06);
+  transition: transform var(--speed-slow), box-shadow var(--speed-slow), border-color var(--speed-base);
+}
+
+.worklog-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--accent));
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.worklog-box:hover {
+  transform: translateY(-3px);
+  border-color: rgba(139, 92, 246, 0.6);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 8px 30px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(139, 92, 246, 0.2),
+    0 0 120px rgba(139, 92, 246, 0.1);
+}
+
+.worklog-box:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+.worklog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.worklog-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+}
+
+.worklog-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.worklog-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ─── WORKLOG BOX WATERMARK ─── */
+.box-watermark {
+  position: absolute;
+  bottom: -0.25rem;
+  right: 1rem;
+  font-size: 4.5rem;
+  opacity: 0.07;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  transition: opacity var(--speed-base), transform var(--speed-base);
+}
+
+.worklog-box:hover .box-watermark {
+  opacity: 0.14;
+  transform: scale(1.08);
+}
+
+/* ─── TEAL VARIANT ─── */
+.worklog-box.teal {
+  border-color: rgba(6, 182, 212, 0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 4px 20px rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(6, 182, 212, 0.1),
+    0 0 100px rgba(6, 182, 212, 0.06);
+}
+
+.worklog-box.teal::before {
+  background: linear-gradient(90deg, var(--accent-teal), var(--accent-teal-light), var(--accent-teal));
+}
+
+.worklog-box.teal:hover {
+  border-color: rgba(6, 182, 212, 0.6);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 8px 30px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(6, 182, 212, 0.2),
+    0 0 120px rgba(6, 182, 212, 0.1);
+}
+
+.worklog-box.teal .worklog-label {
+  color: var(--accent-teal-light);
+}
+
+/* ─── QUICK LINKS GRID ─── */
+.quicklinks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* ─── KEYBOARD HINT ─── */
+.keyboard-hint {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  opacity: 0;
+  animation: fadeSlideIn 0.6s ease 1.2s both;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.keyboard-hint kbd {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
