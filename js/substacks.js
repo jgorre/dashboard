@@ -1,149 +1,16 @@
 // ─── SUBSTACK DATA ───
-export const substacks = [
-  // ── Deep AI ──
-  {
-    name: "Import AI",
-    author: "Jack Clark",
-    emoji: "🤖",
-    url: "https://importai.substack.com",
-    description: "Weekly insights on artificial intelligence research, policy, and industry trends.",
-    category: "Deep AI",
-    featured: true
-  },
-  {
-    name: "Ahead of AI",
-    author: "Sebastian Raschka",
-    emoji: "🧠",
-    url: "https://magazine.sebastianraschka.com",
-    description: "Deep dives into ML research papers, LLM architectures, and training techniques.",
-    category: "Deep AI",
-    featured: true
-  },
-  {
-    name: "The Gradient",
-    author: "The Gradient Team",
-    emoji: "📐",
-    url: "https://thegradient.pub",
-    description: "Perspectives on AI research, machine learning, and the future of intelligence.",
-    category: "Deep AI"
-  },
-  {
-    name: "The Batch",
-    author: "Andrew Ng",
-    emoji: "🔬",
-    url: "https://deeplearning.ai/the-batch",
-    description: "Weekly AI news and insights from the founder of deeplearning.ai and Coursera.",
-    category: "Deep AI"
-  },
-  {
-    name: "Artificial Intelligence Made Simple",
-    author: "Devansh",
-    emoji: "🧩",
-    url: "https://artificialintelligencemadesimple.substack.com",
-    description: "Cutting through the hype — practical, accessible deep dives into AI research and applications.",
-    category: "Deep AI",
-    featured: true
-  },
-  // ── Data Engineering ──
-  {
-    name: "Seattle Data Guy",
-    author: "Benjamin Rogojan",
-    emoji: "🛠️",
-    url: "https://seattledataguy.substack.com",
-    description: "Practical data engineering, system design, and career advice from the trenches.",
-    category: "Data Engineering",
-    featured: true
-  },
-  {
-    name: "Joe Reis's Substack",
-    author: "Joe Reis",
-    emoji: "🏗️",
-    url: "https://joereis.substack.com",
-    description: "Opinionated takes on data engineering fundamentals, architecture, and the modern data stack.",
-    category: "Data Engineering",
-    featured: true
-  },
-  {
-    name: "Data Engineering Weekly",
-    author: "Ananth Packkildurai",
-    emoji: "📬",
-    url: "https://dataengineeringweekly.substack.com",
-    description: "Curated roundup of the best data engineering articles, tools, and trends each week.",
-    category: "Data Engineering"
-  },
-  // ── Developing with AI ──
-  {
-    name: "One Useful Thing",
-    author: "Ethan Mollick",
-    emoji: "🔮",
-    url: "https://oneusefulthing.substack.com",
-    description: "Practical insights on AI's impact on work, education, and everyday life.",
-    category: "Developing with AI"
-  },
-  {
-    name: "Latent Space",
-    author: "Swyx & Alessio",
-    emoji: "🌀",
-    url: "https://latentspace.substack.com",
-    description: "The AI engineer newsletter. Technical deep dives on building with LLMs and AI tooling.",
-    category: "Developing with AI"
-  },
-  {
-    name: "Simon Willison's Weblog",
-    author: "Simon Willison",
-    emoji: "⚡",
-    url: "https://simonwillison.net",
-    description: "Hands-on experiments and tutorials with LLMs, prompt engineering, and AI-powered dev tools.",
-    category: "Developing with AI"
-  },
-  {
-    name: "The Neuron",
-    author: "The Neuron Team",
-    emoji: "🧬",
-    url: "https://theneuron.substack.com",
-    description: "Daily AI news distilled into actionable insights for builders and developers.",
-    category: "Developing with AI"
-  },
-  // ── Philosophy ──
-  {
-    name: "Astral Codex Ten",
-    author: "Scott Alexander",
-    emoji: "🌌",
-    url: "https://astralcodexten.substack.com",
-    description: "Psychiatry, rationality, futurism, and everything in between. Long-form essays.",
-    category: "Philosophy"
-  },
-  {
-    name: "The Intrinsic Perspective",
-    author: "Erik Hoel",
-    emoji: "🔭",
-    url: "https://erikhoel.substack.com",
-    description: "Neuroscience, consciousness, and the philosophy of mind from a working scientist.",
-    category: "Philosophy"
-  },
-  {
-    name: "The Honest Broker",
-    author: "Ted Gioia",
-    emoji: "📖",
-    url: "https://tedgioia.substack.com",
-    description: "Culture, music, technology, and the life of the mind. Contrarian and deeply thoughtful.",
-    category: "Philosophy"
-  },
-  {
-    name: "Noahpinion",
-    author: "Noah Smith",
-    emoji: "💡",
-    url: "https://noahpinion.substack.com",
-    description: "Economics, technology, and geopolitics explored through a philosophical and analytical lens.",
-    category: "Philosophy"
-  },
-  {
-    name: "Commonplace Philosophy",
-    author: "Jared Henderson",
-    emoji: "📜",
-    url: "https://jaredhenderson.substack.com",
-    description: "Philosophy made readable. Essays on life, meaning, ethics, and the examined existence.",
-    category: "Philosophy",
-    featured: true
-  }
-];
+
+/**
+ * @typedef {Object} Substack
+ * @property {string} name
+ * @property {string} author
+ * @property {string} emoji
+ * @property {string} url
+ * @property {string} description
+ * @property {'Deep AI'|'Data Engineering'|'Developing with AI'|'Philosophy'} category
+ * @property {boolean} [featured]
+ */
+
+/** @type {Substack[]} */
+import substacksData from '../data/substacks.json';
+export const substacks = substacksData;

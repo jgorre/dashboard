@@ -2,11 +2,13 @@
 const VIEWS = {
   home: document.getElementById('view-home'),
   substacks: document.getElementById('view-substacks'),
+  links: document.getElementById('view-links'),
 };
 
 const NAV_LINKS = {
   home: document.getElementById('nav-home'),
   substacks: document.getElementById('nav-substacks'),
+  links: document.getElementById('nav-links'),
 };
 
 function showView(name) {

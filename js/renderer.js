@@ -1,5 +1,6 @@
 // ─── RENDERING ───
 import { substacks } from './substacks.js';
+import { links } from './links.js';
 
 const grid = document.getElementById('cards-grid');
 const categoriesEl = document.getElementById('categories');
@@ -11,6 +12,7 @@ export function setActiveCategory(cat) {
   activeCategory = cat;
 }
 
+// SAFE: data is static, never user-generated — sanitize if this changes
 function cardHTML(s) {
   return `
     <a class="card" href="${s.url}" target="_blank" rel="noopener noreferrer">
@@ -61,4 +63,21 @@ export function renderFeatured() {
   const featuredGrid = document.getElementById('featured-grid');
   const featured = substacks.filter(s => s.featured);
   featuredGrid.innerHTML = featured.map(cardHTML).join('');
+}
+
+function linkCardHTML(l) {
+  return `
+    <a class="card" href="${l.url}" target="_blank" rel="noopener noreferrer">
+      <span class="card-arrow">↗</span>
+      <div class="card-emoji">${l.emoji}</div>
+      <div class="card-name">${l.name}</div>
+      <div class="card-description">${l.description}</div>
+      <span class="card-tag">${l.category}</span>
+    </a>
+  `;
+}
+
+export function renderLinks() {
+  const linksGrid = document.getElementById('links-grid');
+  linksGrid.innerHTML = links.map(linkCardHTML).join('');
 }
