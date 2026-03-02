@@ -77,7 +77,18 @@ function linkCardHTML(l) {
   `;
 }
 
-export function renderLinks() {
+export function renderLinks(filter = '') {
   const linksGrid = document.getElementById('links-grid');
-  linksGrid.innerHTML = links.map(linkCardHTML).join('');
+  const q = filter.toLowerCase();
+  const filtered = !q ? links : links.filter(l =>
+    l.name.toLowerCase().includes(q) ||
+    l.description.toLowerCase().includes(q) ||
+    l.category.toLowerCase().includes(q)
+  );
+  linksGrid.innerHTML = filtered.length
+    ? filtered.map(linkCardHTML).join('')
+    : `<div class="empty-results">
+        <div class="empty-results-icon">🔍</div>
+        <div class="empty-results-text">No links match your search</div>
+      </div>`;
 }

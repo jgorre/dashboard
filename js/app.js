@@ -1,7 +1,7 @@
 // ─── APP ENTRY POINT ───
 import { renderCategories, renderCards, renderFeatured, renderLinks } from './renderer.js';
 import { handleRoute } from './router.js';
-import { initSearch } from './search.js';
+import { initSearch, initLinksSearch } from './search.js';
 import { initClock } from './clock.js';
 import { initParticles } from './particles.js';
 
@@ -21,6 +21,7 @@ renderCards();
 renderFeatured();
 renderLinks();
 initSearch();
+initLinksSearch();
 initClock();
 initParticles();
 handleRoute();

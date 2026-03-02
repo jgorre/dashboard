@@ -1,5 +1,5 @@
 // ─── SEARCH & KEYBOARD SHORTCUTS ───
-import { renderCards, renderCategories, setActiveCategory } from './renderer.js';
+import { renderCards, renderCategories, renderLinks, setActiveCategory } from './renderer.js';
 
 export function initSearch() {
   const searchInput = document.getElementById('search');
@@ -18,16 +18,40 @@ export function initSearch() {
   });
 
   document.addEventListener('keydown', e => {
-    if (e.key === '/' && document.activeElement !== searchInput) {
-      e.preventDefault();
-      searchInput.focus();
+    const hash = window.location.hash || '#home';
+
+    if (e.key === '/') {
+      if (hash === '#substacks' && document.activeElement !== searchInput) {
+        e.preventDefault();
+        searchInput.focus();
+      } else if (hash === '#links') {
+        const linksInput = document.getElementById('links-search');
+        if (document.activeElement !== linksInput) {
+          e.preventDefault();
+          linksInput.focus();
+        }
+      }
     }
+
     if (e.key === 'Escape') {
       searchInput.value = '';
       searchInput.blur();
       setActiveCategory('All');
       renderCategories();
       renderCards();
+
+      const linksInput = document.getElementById('links-search');
+      linksInput.value = '';
+      linksInput.blur();
+      renderLinks();
     }
+  });
+}
+
+export function initLinksSearch() {
+  const linksInput = document.getElementById('links-search');
+
+  linksInput.addEventListener('input', () => {
+    renderLinks(linksInput.value);
   });
 }

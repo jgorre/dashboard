@@ -18,6 +18,9 @@ function showView(name) {
   const target = VIEWS[navKey];
   void target.offsetWidth; // force reflow for animations
   target.classList.add('visible');
+
+  const hint = document.querySelector('.keyboard-hint');
+  hint.style.display = navKey === 'home' ? 'none' : '';
 }
 
 export function handleRoute() {
