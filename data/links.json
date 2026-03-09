@@ -1,5 +1,12 @@
 [
   {
+    "name": "smol.ai News",
+    "emoji": "📰",
+    "url": "https://news.smol.ai/",
+    "description": "Curated daily AI news for developers — model releases, research breakthroughs, and industry moves.",
+    "category": "AI News"
+  },
+  {
     "name": "The Data Engineering Simulator",
     "emoji": "⚙️",
     "url": "https://practicaldatamedia.github.io/data-engineering-simulator/",

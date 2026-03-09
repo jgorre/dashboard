@@ -61,7 +61,9 @@ export function renderCards(filter = '', category = activeCategory) {
 
 export function renderFeatured() {
   const featuredGrid = document.getElementById('featured-grid');
-  const featured = substacks.filter(s => s.featured);
+  const featured = substacks
+    .filter(s => s.featured)
+    .sort((a, b) => (a.featuredOrder ?? 999) - (b.featuredOrder ?? 999));
   featuredGrid.innerHTML = featured.map(cardHTML).join('');
 }
 

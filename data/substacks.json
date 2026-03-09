@@ -6,7 +6,8 @@
     "url": "https://importai.substack.com",
     "description": "Weekly insights on artificial intelligence research, policy, and industry trends.",
     "category": "Deep AI",
-    "featured": true
+    "featured": true,
+    "featuredOrder": 4
   },
   {
     "name": "Ahead of AI",
@@ -15,7 +16,8 @@
     "url": "https://magazine.sebastianraschka.com",
     "description": "Deep dives into ML research papers, LLM architectures, and training techniques.",
     "category": "Deep AI",
-    "featured": true
+    "featured": true,
+    "featuredOrder": 6
   },
   {
     "name": "The Gradient",
@@ -40,7 +42,8 @@
     "url": "https://artificialintelligencemadesimple.substack.com",
     "description": "Cutting through the hype — practical, accessible deep dives into AI research and applications.",
     "category": "Deep AI",
-    "featured": true
+    "featured": true,
+    "featuredOrder": 3
   },
   {
     "name": "Seattle Data Guy",
@@ -49,7 +52,8 @@
     "url": "https://seattledataguy.substack.com",
     "description": "Practical data engineering, system design, and career advice from the trenches.",
     "category": "Data Engineering",
-    "featured": true
+    "featured": true,
+    "featuredOrder": 5
   },
   {
     "name": "Joe Reis's Substack",
@@ -58,7 +62,8 @@
     "url": "https://joereis.substack.com",
     "description": "Opinionated takes on data engineering fundamentals, architecture, and the modern data stack.",
     "category": "Data Engineering",
-    "featured": true
+    "featured": true,
+    "featuredOrder": 2
   },
   {
     "name": "Data Engineering Weekly",
@@ -101,6 +106,16 @@
     "category": "Developing with AI"
   },
   {
+    "name": "smol.ai News",
+    "author": "Swyx",
+    "emoji": "📰",
+    "url": "https://news.smol.ai/",
+    "description": "Curated daily AI news for developers — model releases, research breakthroughs, and industry moves.",
+    "category": "Developing with AI",
+    "featured": true,
+    "featuredOrder": 1
+  },
+  {
     "name": "Astral Codex Ten",
     "author": "Scott Alexander",
     "emoji": "🌌",
@@ -139,6 +154,7 @@
     "url": "https://jaredhenderson.substack.com",
     "description": "Philosophy made readable. Essays on life, meaning, ethics, and the examined existence.",
     "category": "Philosophy",
-    "featured": true
+    "featured": true,
+    "featuredOrder": 7
   }
 ]
