@@ -10,13 +10,24 @@ let els = {};
 let keydownHandler = null;
 
 // ===== API =====
+async function pullLatest() {
+  try {
+    await fetch('/api/anki/pull', { method: 'POST' });
+  } catch (err) {
+    console.warn('Anki pull failed:', err);
+  }
+}
+
 async function loadData() {
+  await pullLatest();
   const res = await fetch('/api/anki/cards');
   data = await res.json();
   updateDueCards();
   updateStats();
   showNextCard();
   renderRecentCards();
+  showBackupStatus('✓ Synced, up to date');
+  hideBackupStatus();
 }
 
 async function saveData() {
@@ -461,13 +472,9 @@ to run - att springa"
     };
     document.addEventListener('keydown', keydownHandler);
 
-    // Load data and show last backup
+    // Sync and load data
+    showBackupStatus('Syncing...', true);
     loadData();
-    const lastBackup = localStorage.getItem('ankiLastBackup');
-    if (lastBackup) {
-      showBackupStatus(`Last backup: ${lastBackup}`);
-      hideBackupStatus(5000);
-    }
   },
 
   unmount() {

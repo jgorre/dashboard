@@ -12,6 +12,18 @@ function onStartup() {
   console.log('  Anki: Plugin ready');
 }
 
+// Pull latest changes before reading cards
+router.post('/pull', (req, res) => {
+  exec('git pull', { cwd: PROJECT_ROOT }, (error, stdout, stderr) => {
+    if (error) {
+      console.error('Anki pull error:', stderr || error.message);
+      return res.status(500).json({ success: false, error: 'Pull failed' });
+    }
+    console.log('Anki pull:', stdout.trim());
+    res.json({ success: true, message: stdout.trim() });
+  });
+});
+
 // Get all cards
 router.get('/cards', (req, res) => {
   try {

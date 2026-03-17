@@ -90,6 +90,17 @@
 .view.visible .card:nth-child(11) { animation-delay: 0.55s; }
 .view.visible .card:nth-child(12) { animation-delay: 0.60s; }
 
+/* ─── STAGGERED APP CARD ANIMATION ─── */
+.view.visible .app-card {
+  animation: cardIn var(--speed-slow) both;
+}
+.view.visible .app-card:nth-child(1) { animation-delay: 0.10s; }
+.view.visible .app-card:nth-child(2) { animation-delay: 0.16s; }
+.view.visible .app-card:nth-child(3) { animation-delay: 0.22s; }
+.view.visible .app-card:nth-child(4) { animation-delay: 0.28s; }
+.view.visible .app-card:nth-child(5) { animation-delay: 0.34s; }
+.view.visible .app-card:nth-child(6) { animation-delay: 0.40s; }
+
 /* Home featured grid: offset after quicklinks above */
 .view.visible .featured-grid .card:nth-child(1) { animation-delay: 0.42s; }
 .view.visible .featured-grid .card:nth-child(2) { animation-delay: 0.47s; }
