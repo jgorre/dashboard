@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles/layout.css" />
   <link rel="stylesheet" href="styles/components.css" />
   <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="apps/anki/anki.css" />
 </head>
 <body>
   <canvas id="particles"></canvas>
@@ -27,6 +28,7 @@
           <a class="nav-link" href="#home" id="nav-home">Home</a>
           <a class="nav-link" href="#substacks" id="nav-substacks">Substacks</a>
           <a class="nav-link" href="#links" id="nav-links">Links</a>
+          <span id="plugin-nav"></span>
         </nav>
         <span class="header-clock" id="clock"></span>
       </div>
@@ -98,6 +100,9 @@
       <!-- CARDS -->
       <div class="cards-grid" id="cards-grid"></div>
     </div>
+
+    <!-- PLUGIN APP VIEW -->
+    <div class="view" id="view-app"></div>
 
     <!-- LINKS VIEW -->
     <div class="view" id="view-links">

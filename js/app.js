@@ -1,9 +1,10 @@
 // ─── APP ENTRY POINT ───
 import { renderCategories, renderCards, renderFeatured, renderLinks } from './renderer.js';
-import { handleRoute } from './router.js';
+import { handleRoute, initPluginNav } from './router.js';
 import { initSearch, initLinksSearch } from './search.js';
 import { initClock } from './clock.js';
 import { initParticles } from './particles.js';
+import { loadPlugins } from './plugins.js';
 
 // Wire up config links
 if (typeof DASHBOARD_CONFIG !== 'undefined') {
@@ -24,4 +25,9 @@ initSearch();
 initLinksSearch();
 initClock();
 initParticles();
-handleRoute();
+
+// Load plugins, then initialize routing
+loadPlugins().then(() => {
+  initPluginNav();
+  handleRoute();
+});
