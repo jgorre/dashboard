@@ -593,7 +593,16 @@
       "interval": 1,
       "easeFactor": 2.65,
       "repetitions": 1
+    },
+    {
+      "id": 67,
+      "english": "bs",
+      "swedish": "card",
+      "nextReview": "2026-03-17",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 67
+  "nextId": 68
 }
