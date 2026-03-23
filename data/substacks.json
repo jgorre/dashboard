@@ -5,6 +5,14 @@
     "emoji": "🤖",
     "url": "https://importai.substack.com",
     "description": "Weekly insights on artificial intelligence research, policy, and industry trends.",
+    "category": "Deep AI"
+  },
+  {
+    "name": "Interconnects",
+    "author": "Nathan Lambert",
+    "emoji": "🔗",
+    "url": "https://www.interconnects.ai",
+    "description": "In-depth analysis of AI alignment, RLHF, and the science behind modern language models.",
     "category": "Deep AI",
     "featured": true,
     "featuredOrder": 4
