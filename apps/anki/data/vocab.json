@@ -85,9 +85,9 @@
       "id": 10,
       "english": "peaceful",
       "swedish": "fredlig",
-      "nextReview": "2026-03-25",
+      "nextReview": "2026-03-26",
       "interval": 1,
-      "easeFactor": 2.0500000000000003,
+      "easeFactor": 1.9000000000000004,
       "repetitions": 4
     },
     {
@@ -175,9 +175,9 @@
       "id": 20,
       "english": "skittish (usually of an animal)",
       "swedish": "skygg",
-      "nextReview": "2026-03-25",
-      "interval": 2,
-      "easeFactor": 1.9000000000000004,
+      "nextReview": "2026-03-26",
+      "interval": 1,
+      "easeFactor": 1.7500000000000004,
       "repetitions": 5
     },
     {
@@ -247,19 +247,19 @@
       "id": 28,
       "english": "to shoo away or chase off",
       "swedish": "att sjasa",
-      "nextReview": "2026-03-25",
+      "nextReview": "2026-03-26",
       "interval": 1,
-      "easeFactor": 1.6000000000000005,
+      "easeFactor": 1.4500000000000006,
       "repetitions": 4
     },
     {
       "id": 29,
       "english": "to flap (wings/arms), to flutter",
       "swedish": "att flaxa",
-      "nextReview": "2026-03-25",
-      "interval": 1,
+      "nextReview": "2026-03-27",
+      "interval": 2,
       "easeFactor": 1.7500000000000004,
-      "repetitions": 4
+      "repetitions": 5
     },
     {
       "id": 30,
@@ -445,9 +445,9 @@
       "id": 50,
       "english": "even if",
       "swedish": "även om",
-      "nextReview": "2026-03-25",
+      "nextReview": "2026-03-26",
       "interval": 1,
-      "easeFactor": 2.0500000000000003,
+      "easeFactor": 1.9000000000000004,
       "repetitions": 3
     },
     {
@@ -463,9 +463,9 @@
       "id": 52,
       "english": "even though",
       "swedish": "fastän",
-      "nextReview": "2026-03-25",
+      "nextReview": "2026-03-26",
       "interval": 1,
-      "easeFactor": 1.9000000000000004,
+      "easeFactor": 1.7500000000000004,
       "repetitions": 2
     },
     {
@@ -580,9 +580,9 @@
       "id": 65,
       "english": "a widow",
       "swedish": "en änka",
-      "nextReview": "2026-03-25",
+      "nextReview": "2026-03-26",
       "interval": 1,
-      "easeFactor": 2.0500000000000003,
+      "easeFactor": 1.9000000000000004,
       "repetitions": 1
     }
   ],
