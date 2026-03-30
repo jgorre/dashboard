@@ -65,16 +65,23 @@
 .view.visible .card {
   animation: cardIn var(--speed-slow) both;
 }
+.view.visible .todos-list {
+  animation: fadeSlideIn 0.6s ease 0.08s both;
+}
+.view.visible .todos-add-row {
+  animation: fadeSlideIn 0.6s ease 0.12s both;
+}
+
 .view.visible .worklog-box {
   animation: fadeSlideIn 0.6s ease 0.10s both, worklogGlow 4s ease-in-out 1.2s infinite;
 }
 .view.visible .worklog-box.teal {
   animation: fadeSlideIn 0.6s ease 0.10s both, worklogGlowTeal 4s ease-in-out 1.2s infinite;
 }
-.view.visible .quicklinks-grid:first-of-type .worklog-box:nth-child(1) { animation-delay: 0.10s, 1.2s; }
-.view.visible .quicklinks-grid:first-of-type .worklog-box:nth-child(2) { animation-delay: 0.16s, 1.2s; }
-.view.visible .quicklinks-grid:nth-of-type(2) .worklog-box:nth-child(1) { animation-delay: 0.26s, 1.2s; }
-.view.visible .quicklinks-grid:nth-of-type(2) .worklog-box:nth-child(2) { animation-delay: 0.32s, 1.2s; }
+.view.visible #work-grid .worklog-box:nth-child(1) { animation-delay: 0.10s, 1.2s; }
+.view.visible #work-grid .worklog-box:nth-child(2) { animation-delay: 0.16s, 1.2s; }
+.view.visible #personal-grid .worklog-box:nth-child(1) { animation-delay: 0.26s, 1.2s; }
+.view.visible #personal-grid .worklog-box:nth-child(2) { animation-delay: 0.32s, 1.2s; }
 
 /* ─── STAGGERED CARD ANIMATION ─── */
 .view.visible .card:nth-child(1)  { animation-delay: 0.05s; }
