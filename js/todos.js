@@ -45,9 +45,8 @@ function renderList() {
 
   list.innerHTML = todos.map(t => {
     const cls = t.completed ? ' todos-item--completed' : '';
-    const icon = t.completed ? '\u25CF' : '\u25CB';
     return `<li class="todos-item${cls}" data-id="${t.id}">
-      <button class="todos-checkbox" aria-label="Toggle complete">${icon}</button>
+      <button class="todos-checkbox" aria-label="Toggle complete"></button>
       <span class="todos-title"></span>
       <button class="todos-delete" aria-label="Delete">\u00D7</button>
     </li>`;
