@@ -5,6 +5,7 @@ import { initSearch, initLinksSearch } from './search.js';
 import { initClock } from './clock.js';
 import { initParticles } from './particles.js';
 import { loadPlugins } from './plugins.js';
+import { initTodos } from './todos.js';
 
 // Wire up config links
 if (typeof DASHBOARD_CONFIG !== 'undefined') {
@@ -17,6 +18,7 @@ if (typeof DASHBOARD_CONFIG !== 'undefined') {
 }
 
 // Initialize all modules
+initTodos();
 renderCategories();
 renderCards();
 renderFeatured();
