@@ -13,5 +13,15 @@
     "id": 9,
     "title": "[Work] We need to start Cloud Skills Boosting. HOW?",
     "completed": false
+  },
+  {
+    "id": 10,
+    "title": "[Dash] Build lightweight meal tracker into the dashboard",
+    "completed": false
+  },
+  {
+    "id": 11,
+    "title": "[Work] dlt jobs to sto1",
+    "completed": false
   }
 ]
