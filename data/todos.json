@@ -20,16 +20,6 @@
     "completed": false
   },
   {
-    "id": 11,
-    "title": "[Work] dlt jobs to sto1",
-    "completed": false
-  },
-  {
-    "id": 12,
-    "title": "[Work] Tipsa Danilo about Signal and Piwik",
-    "completed": false
-  },
-  {
     "id": 13,
     "title": "[Work] Answer onboarding thread",
     "completed": false
@@ -37,6 +27,11 @@
   {
     "id": 14,
     "title": "[Work] Play around with dbt-analytics",
+    "completed": false
+  },
+  {
+    "id": 15,
+    "title": "[Work] Make sure dlt PR gets merged",
     "completed": false
   }
 ]
