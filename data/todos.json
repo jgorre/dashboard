@@ -1,7 +1,17 @@
 [
   {
     "id": 1,
-    "title": "Have Claude make the animation setup on the dashboard app be more scalable",
-    "completed": true
+    "title": "[Dash] Have Claude make the animation setup on the dashboard app be more scalable",
+    "completed": false
+  },
+  {
+    "id": 8,
+    "title": "[Work] Message Sebastian Lagerman about getting Backstage access",
+    "completed": false
+  },
+  {
+    "id": 9,
+    "title": "[Work] We need to start Cloud Skills Boosting. HOW?",
+    "completed": false
   }
 ]
