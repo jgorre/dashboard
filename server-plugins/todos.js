@@ -1,10 +1,12 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const { exec } = require('child_process');
 
 const router = express.Router();
 
 const DATA_FILE = path.join(__dirname, '..', 'data', 'todos.json');
+const PROJECT_ROOT = path.join(__dirname, '..');
 
 function readTodos() {
   try {
@@ -66,6 +68,38 @@ router.delete('/:id', (req, res) => {
 
   writeTodos(todos);
   res.json({ success: true });
+});
+
+// Check if todos.json has uncommitted changes
+router.get('/backup/status', (req, res) => {
+  const todosRelPath = path.relative(PROJECT_ROOT, DATA_FILE);
+  exec(`git status --porcelain ${todosRelPath}`, { cwd: PROJECT_ROOT }, (error, stdout) => {
+    if (error) return res.status(500).json({ dirty: false });
+    res.json({ dirty: stdout.trim().length > 0 });
+  });
+});
+
+// Backup — commit and push todos.json
+router.post('/backup', (req, res) => {
+  const todosRelPath = path.relative(PROJECT_ROOT, DATA_FILE);
+  const message = `Backup todos - ${new Date().toISOString().slice(0, 10)}`;
+  const commands = [
+    `git add ${todosRelPath}`,
+    `git commit -m "${message}"`,
+    `git push`
+  ].join(' && ');
+
+  exec(commands, { cwd: PROJECT_ROOT }, (error, stdout) => {
+    if (error) {
+      if (stdout.includes('nothing to commit') || stdout.includes('no changes added to commit')) {
+        return res.json({ success: true, message: 'Nothing to commit' });
+      }
+      console.error('Todos backup error:', error.message);
+      return res.status(500).json({ success: false, error: 'Backup failed' });
+    }
+    console.log('Todos backup successful');
+    res.json({ success: true, message: 'Backed up successfully' });
+  });
 });
 
 module.exports = { router, onStartup };

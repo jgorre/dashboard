@@ -8,12 +8,17 @@ async function fetchTodos() {
   todos = await res.json();
 }
 
+function markDirty() {
+  if (backupBtn) backupBtn.disabled = false;
+}
+
 async function addTodo(title) {
   await fetch(API, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ title }),
   });
+  markDirty();
 }
 
 async function toggleTodo(id, completed) {
@@ -22,6 +27,7 @@ async function toggleTodo(id, completed) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ completed }),
   });
+  markDirty();
 }
 
 async function updateTitle(id, title) {
@@ -30,10 +36,12 @@ async function updateTitle(id, title) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ title }),
   });
+  markDirty();
 }
 
 async function deleteTodo(id) {
   await fetch(`${API}/${id}`, { method: 'DELETE' });
+  markDirty();
 }
 
 function renderList() {
@@ -56,6 +64,18 @@ function renderList() {
   list.querySelectorAll('.todos-item').forEach((el, i) => {
     el.querySelector('.todos-title').textContent = todos[i].title;
   });
+}
+
+let backupBtn = null;
+
+async function checkBackupStatus() {
+  try {
+    const res = await fetch(`${API}/backup/status`);
+    const { dirty } = await res.json();
+    if (backupBtn) backupBtn.disabled = !dirty;
+  } catch {
+    // leave as-is
+  }
 }
 
 async function refresh() {
@@ -142,6 +162,28 @@ export async function initTodos() {
     } else if (e.target.closest('.todos-delete')) {
       await deleteTodo(id);
       await refresh();
+    }
+  });
+
+  // Backup button
+  backupBtn = document.getElementById('todos-backup-btn');
+  backupBtn.disabled = true; // default until status check resolves
+  checkBackupStatus();
+  backupBtn.addEventListener('click', async () => {
+    backupBtn.innerHTML = '<span class="todos-backup-spinner"></span>';
+    try {
+      const res = await fetch(`${API}/backup`, { method: 'POST' });
+      const data = await res.json();
+      backupBtn.innerHTML = '✓';
+      backupBtn.classList.add('success');
+      setTimeout(() => {
+        backupBtn.innerHTML = '☁️';
+        backupBtn.classList.remove('success');
+        checkBackupStatus();
+      }, 2000);
+    } catch {
+      backupBtn.innerHTML = '☁️';
+      checkBackupStatus();
     }
   });
 

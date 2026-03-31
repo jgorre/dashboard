@@ -380,6 +380,71 @@
   margin-bottom: 0;
 }
 
+/* ─── TODOS BACKUP FAB ─── */
+.todos-backup-fab {
+  position: fixed;
+  bottom: 2.75rem;
+  right: 4rem;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 15%, var(--bg-card));
+  border: 1.5px solid var(--accent);
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeSlideIn 0.6s ease 1.2s both;
+  box-shadow: 0 0 16px color-mix(in srgb, var(--accent) 40%, transparent),
+              0 0 40px color-mix(in srgb, var(--accent) 20%, transparent);
+  transition: box-shadow var(--speed-base), background var(--speed-base), border-color var(--speed-base), opacity var(--speed-base), transform var(--speed-base);
+  z-index: 10;
+}
+
+.todos-backup-fab:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--accent) 28%, var(--bg-card));
+  box-shadow: 0 0 24px color-mix(in srgb, var(--accent) 60%, transparent),
+              0 0 60px color-mix(in srgb, var(--accent) 30%, transparent);
+  transform: scale(1.08);
+}
+
+.todos-backup-fab:disabled {
+  border-color: var(--border);
+  background: var(--bg-card);
+  box-shadow: none;
+  opacity: 0.35 !important;
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
+
+.todos-backup-fab.success {
+  border-color: #10b981;
+  background: color-mix(in srgb, #10b981 18%, var(--bg-card));
+  box-shadow: 0 0 20px color-mix(in srgb, #10b981 50%, transparent);
+  color: #d1fae5;
+}
+
+.todos-backup-fab.error {
+  border-color: #ef4444;
+  background: color-mix(in srgb, #ef4444 18%, var(--bg-card));
+  box-shadow: 0 0 20px color-mix(in srgb, #ef4444 50%, transparent);
+}
+
+.todos-backup-spinner {
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 2px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: todos-spin 0.7s linear infinite;
+}
+
+@keyframes todos-spin {
+  to { transform: rotate(360deg); }
+}
+
 /* ─── KEYBOARD HINT ─── */
 .keyboard-hint {
   position: fixed;
