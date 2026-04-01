@@ -10,18 +10,8 @@
     "completed": false
   },
   {
-    "id": 9,
-    "title": "[Work] We need to start Cloud Skills Boosting. HOW?",
-    "completed": false
-  },
-  {
     "id": 10,
     "title": "[Dash] Build lightweight meal tracker into the dashboard",
-    "completed": false
-  },
-  {
-    "id": 13,
-    "title": "[Work] Answer onboarding thread",
     "completed": false
   },
   {
@@ -31,7 +21,12 @@
   },
   {
     "id": 15,
-    "title": "[Work] Make sure dlt PR gets merged",
+    "title": "[Work] Help Vishal",
+    "completed": false
+  },
+  {
+    "id": 16,
+    "title": "[Work] Investigate data tagging propagation",
     "completed": false
   }
 ]
