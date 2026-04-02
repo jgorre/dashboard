@@ -13,20 +13,5 @@
     "id": 14,
     "title": "[Work] Play around with dbt-analytics",
     "completed": false
-  },
-  {
-    "id": 16,
-    "title": "[Work] Investigate data tagging propagation",
-    "completed": false
-  },
-  {
-    "id": 17,
-    "title": "[JIRA] Make JIRA explaining Vishal situation and how we are don't have any observability on the error, and that this needs fixed",
-    "completed": false
-  },
-  {
-    "id": 18,
-    "title": "[Work] Help Vishal first thing in the morning",
-    "completed": false
   }
 ]
