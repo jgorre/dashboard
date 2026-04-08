@@ -31,7 +31,12 @@
   },
   {
     "id": 18,
-    "title": "[Work] Do the fixing of the onboarding process, first thing in the morning",
-    "completed": true
+    "title": "[Work] help sebastian with dlt",
+    "completed": false
+  },
+  {
+    "id": 19,
+    "title": "[Work] Define data contracts yml. Do something minimal",
+    "completed": false
   }
 ]
