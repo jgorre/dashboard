@@ -10,33 +10,8 @@
     "completed": false
   },
   {
-    "id": 14,
-    "title": "[Work] Play around with dbt-analytics",
-    "completed": false
-  },
-  {
     "id": 15,
     "title": "[Gen] Wait for allshares response",
-    "completed": false
-  },
-  {
-    "id": 16,
-    "title": "[Gen] LinkedIn reply",
-    "completed": false
-  },
-  {
-    "id": 17,
-    "title": "[Work] Ask Sebastian about Stockholm",
-    "completed": false
-  },
-  {
-    "id": 18,
-    "title": "[Work] help sebastian with dlt",
-    "completed": false
-  },
-  {
-    "id": 19,
-    "title": "[Work] Define data contracts yml. Do something minimal",
     "completed": false
   }
 ]
