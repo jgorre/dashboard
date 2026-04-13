@@ -1,17 +1,12 @@
 [
   {
     "id": 1,
-    "title": "[Dash] Have Claude make the animation setup on the dashboard app be more scalable",
+    "title": "Have Claude make the animation setup on the dashboard app be more scalable",
     "completed": false
   },
   {
     "id": 10,
-    "title": "[Dash] Build lightweight meal tracker into the dashboard",
-    "completed": false
-  },
-  {
-    "id": 15,
-    "title": "[Gen] Wait for allshares response",
+    "title": "Build lightweight meal tracker into the dashboard",
     "completed": false
   }
 ]
