@@ -13,9 +13,7 @@
     "emoji": "🔗",
     "url": "https://www.interconnects.ai",
     "description": "In-depth analysis of AI alignment, RLHF, and the science behind modern language models.",
-    "category": "Deep AI",
-    "featured": true,
-    "featuredOrder": 4
+    "category": "Deep AI"
   },
   {
     "name": "Ahead of AI",
@@ -23,9 +21,7 @@
     "emoji": "🧠",
     "url": "https://magazine.sebastianraschka.com",
     "description": "Deep dives into ML research papers, LLM architectures, and training techniques.",
-    "category": "Deep AI",
-    "featured": true,
-    "featuredOrder": 6
+    "category": "Deep AI"
   },
   {
     "name": "The Gradient",
@@ -59,9 +55,7 @@
     "emoji": "🛠️",
     "url": "https://seattledataguy.substack.com",
     "description": "Practical data engineering, system design, and career advice from the trenches.",
-    "category": "Data Engineering",
-    "featured": true,
-    "featuredOrder": 5
+    "category": "Data Engineering"
   },
   {
     "name": "Joe Reis's Substack",
@@ -161,8 +155,26 @@
     "emoji": "📜",
     "url": "https://jaredhenderson.substack.com",
     "description": "Philosophy made readable. Essays on life, meaning, ethics, and the examined existence.",
+    "category": "Philosophy"
+  },
+  {
+    "name": "Chartbook",
+    "author": "Adam Tooze",
+    "emoji": "📊",
+    "url": "https://adamtooze.substack.com",
+    "description": "Global economic history and political economy from one of the world's leading historians.",
     "category": "Philosophy",
     "featured": true,
-    "featuredOrder": 7
+    "featuredOrder": 4
+  },
+  {
+    "name": "Pod Street Week",
+    "author": "George Noble",
+    "emoji": "🎙️",
+    "url": "https://podstreetweek.substack.com",
+    "description": "Weekly roundup of the best podcasts and ideas worth your ears.",
+    "category": "Philosophy",
+    "featured": true,
+    "featuredOrder": 5
   }
 ]

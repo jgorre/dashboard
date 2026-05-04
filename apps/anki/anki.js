@@ -26,8 +26,17 @@ async function loadData() {
   updateStats();
   showNextCard();
   renderRecentCards();
+  hideSyncOverlay();
   showBackupStatus('✓ Synced, up to date');
   hideBackupStatus();
+}
+
+function hideSyncOverlay() {
+  if (!els.syncOverlay) return;
+  els.syncOverlay.classList.add('fading');
+  els.syncOverlay.addEventListener('transitionend', () => {
+    if (els.syncOverlay) els.syncOverlay.classList.add('hidden');
+  }, { once: true });
 }
 
 async function saveData() {
@@ -299,6 +308,11 @@ export default {
 
         <!-- Study View -->
         <div id="anki-study-view" class="anki-view active">
+          <div id="anki-sync-overlay" class="anki-sync-overlay">
+            <div class="anki-sync-spinner"></div>
+            <span class="anki-sync-label">Syncing vocab...</span>
+          </div>
+
           <div class="anki-stats">
             <span id="anki-due-count">0 cards due</span>
             <span id="anki-total-count">0 total</span>
@@ -415,6 +429,7 @@ to run - att springa"
       backupStatus: container.querySelector('#anki-backup-status'),
       backupSpinner: container.querySelector('.anki-backup-spinner'),
       backupText: container.querySelector('#anki-backup-text'),
+      syncOverlay: container.querySelector('#anki-sync-overlay'),
     };
 
     // Nav buttons
@@ -473,7 +488,6 @@ to run - att springa"
     document.addEventListener('keydown', keydownHandler);
 
     // Sync and load data
-    showBackupStatus('Syncing...', true);
     loadData();
   },
 

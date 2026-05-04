@@ -41,6 +41,54 @@
   color: white;
 }
 
+/* ===== Sync Overlay ===== */
+.anki-sync-overlay {
+  position: absolute;
+  inset: 0;
+  min-height: 400px;
+  z-index: 10;
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.anki-sync-overlay.fading {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.anki-sync-overlay.hidden {
+  display: none;
+}
+
+.anki-sync-spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: var(--accent);
+  border-right-color: var(--accent);
+  animation: ankiSpin 0.9s linear infinite, ankiGlow 2s ease-in-out infinite;
+  box-shadow: 0 0 20px var(--accent-subtle);
+}
+
+@keyframes ankiGlow {
+  0%, 100% { box-shadow: 0 0 16px var(--accent-subtle); }
+  50% { box-shadow: 0 0 36px var(--accent), 0 0 60px var(--accent-subtle); }
+}
+
+.anki-sync-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+}
+
+
 /* ===== Views ===== */
 .anki-view {
   display: none;
@@ -48,6 +96,7 @@
 
 .anki-view.active {
   display: block;
+  position: relative;
   animation: ankiFadeIn 0.3s ease;
 }
 
