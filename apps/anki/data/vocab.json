@@ -4,64 +4,64 @@
       "id": 1,
       "english": "villain, bad guy",
       "swedish": "skurk",
-      "nextReview": "2026-05-05",
+      "nextReview": "2026-05-06",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 2,
       "english": "invent",
       "swedish": "uppfinna",
-      "nextReview": "2026-05-05",
+      "nextReview": "2026-05-06",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 3,
       "english": "sensible, reasonable",
       "swedish": "vettigt",
-      "nextReview": "2026-05-05",
+      "nextReview": "2026-05-06",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 4,
       "english": "appoint, designate",
       "swedish": "utse",
-      "nextReview": "2026-05-05",
+      "nextReview": "2026-05-06",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 5,
       "english": "foresee, predict",
       "swedish": "förutse",
-      "nextReview": "2026-05-05",
+      "nextReview": "2026-05-06",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 6,
       "english": "prosecute",
       "swedish": "åtala",
-      "nextReview": "2026-05-05",
+      "nextReview": "2026-05-06",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 7,
       "english": "empire",
       "swedish": "kejsardöme",
-      "nextReview": "2026-05-05",
+      "nextReview": "2026-05-06",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     }
   ],
   "nextId": 8
