@@ -62,7 +62,52 @@
       "interval": 1,
       "easeFactor": 2.5,
       "repetitions": 1
+    },
+    {
+      "id": 8,
+      "english": "equality",
+      "swedish": "jämlikhet",
+      "nextReview": "2026-05-12",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 9,
+      "english": "consensus, mutual understanding",
+      "swedish": "samförstånd",
+      "nextReview": "2026-05-12",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 10,
+      "english": "exception",
+      "swedish": "undantag",
+      "nextReview": "2026-05-12",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 11,
+      "english": "offentlig",
+      "swedish": "public",
+      "nextReview": "2026-05-12",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 12,
+      "english": "expenditures, expenses",
+      "swedish": "utgifterna",
+      "nextReview": "2026-05-12",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 8
+  "nextId": 13
 }
