@@ -98,7 +98,16 @@
       "interval": 1,
       "easeFactor": 2.5,
       "repetitions": 1
+    },
+    {
+      "id": 13,
+      "english": "expenditures, expenses",
+      "swedish": "utgifter",
+      "nextReview": "2026-05-12",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 13
+  "nextId": 14
 }
