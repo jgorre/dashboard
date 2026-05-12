@@ -103,10 +103,10 @@
       "id": 13,
       "english": "expenditures, expenses",
       "swedish": "utgifter",
-      "nextReview": "2026-05-12",
+      "nextReview": "2026-05-13",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     }
   ],
   "nextId": 14
