@@ -107,7 +107,25 @@
       "interval": 1,
       "easeFactor": 2.5,
       "repetitions": 1
+    },
+    {
+      "id": 14,
+      "english": "to carry out / implement",
+      "swedish": "att verkställa",
+      "nextReview": "2026-05-18",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 15,
+      "english": "childcare / child care services",
+      "swedish": "barnomsorg",
+      "nextReview": "2026-05-18",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 14
+  "nextId": 16
 }
