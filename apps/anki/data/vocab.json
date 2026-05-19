@@ -13,28 +13,28 @@
       "id": 2,
       "english": "invent",
       "swedish": "uppfinna",
-      "nextReview": "2026-05-19",
-      "interval": 1,
+      "nextReview": "2026-05-26",
+      "interval": 7,
       "easeFactor": 2.35,
-      "repetitions": 2
+      "repetitions": 3
     },
     {
       "id": 3,
       "english": "sensible, reasonable",
       "swedish": "vettigt",
-      "nextReview": "2026-05-19",
-      "interval": 1,
+      "nextReview": "2026-05-22",
+      "interval": 3,
       "easeFactor": 2.2,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 4,
       "english": "appoint, designate",
       "swedish": "utse",
-      "nextReview": "2026-05-19",
-      "interval": 1,
+      "nextReview": "2026-05-26",
+      "interval": 7,
       "easeFactor": 2.35,
-      "repetitions": 2
+      "repetitions": 3
     },
     {
       "id": 5,
@@ -49,28 +49,28 @@
       "id": 6,
       "english": "prosecute",
       "swedish": "åtala",
-      "nextReview": "2026-05-19",
-      "interval": 1,
+      "nextReview": "2026-05-22",
+      "interval": 3,
       "easeFactor": 2.2,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 7,
       "english": "empire",
       "swedish": "kejsardöme",
-      "nextReview": "2026-05-19",
-      "interval": 1,
+      "nextReview": "2026-05-22",
+      "interval": 3,
       "easeFactor": 2.2,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 8,
       "english": "equality",
       "swedish": "jämlikhet",
-      "nextReview": "2026-05-19",
-      "interval": 1,
+      "nextReview": "2026-05-22",
+      "interval": 3,
       "easeFactor": 2.35,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 9,
@@ -112,19 +112,19 @@
       "id": 14,
       "english": "to carry out / implement",
       "swedish": "att verkställa",
-      "nextReview": "2026-05-19",
+      "nextReview": "2026-05-20",
       "interval": 1,
-      "easeFactor": 2.35,
+      "easeFactor": 2.2,
       "repetitions": 0
     },
     {
       "id": 15,
       "english": "childcare / child care services",
       "swedish": "barnomsorg",
-      "nextReview": "2026-05-19",
-      "interval": 1,
+      "nextReview": "2026-05-22",
+      "interval": 3,
       "easeFactor": 2.5,
-      "repetitions": 1
+      "repetitions": 2
     }
   ],
   "nextId": 16
