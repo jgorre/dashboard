@@ -125,7 +125,61 @@
       "interval": 3,
       "easeFactor": 2.5,
       "repetitions": 2
+    },
+    {
+      "id": 16,
+      "english": "peaceful, tranquil",
+      "swedish": "rofyllt",
+      "nextReview": "2026-05-21",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 17,
+      "english": "restful",
+      "swedish": "vilsamt",
+      "nextReview": "2026-05-21",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 18,
+      "english": "delighted by, fond of",
+      "swedish": "förtjusta i",
+      "nextReview": "2026-05-21",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 19,
+      "english": "secluded, private, isolated",
+      "swedish": "avskild",
+      "nextReview": "2026-05-21",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 20,
+      "english": "forest clearing",
+      "swedish": "skogsglänta",
+      "nextReview": "2026-05-21",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 21,
+      "english": "honorable man, man of integrity",
+      "swedish": "hedersman",
+      "nextReview": "2026-05-21",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 16
+  "nextId": 22
 }
