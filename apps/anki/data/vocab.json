@@ -40,10 +40,10 @@
       "id": 5,
       "english": "foresee, predict",
       "swedish": "förutse",
-      "nextReview": "2026-05-21",
-      "interval": 3,
+      "nextReview": "2026-05-28",
+      "interval": 7,
       "easeFactor": 2.35,
-      "repetitions": 2
+      "repetitions": 3
     },
     {
       "id": 6,
@@ -76,46 +76,46 @@
       "id": 9,
       "english": "consensus, mutual understanding",
       "swedish": "samförstånd",
-      "nextReview": "2026-05-21",
-      "interval": 3,
-      "easeFactor": 2.5,
+      "nextReview": "2026-05-22",
+      "interval": 1,
+      "easeFactor": 2.35,
       "repetitions": 2
     },
     {
       "id": 10,
       "english": "exception",
       "swedish": "undantag",
-      "nextReview": "2026-05-21",
-      "interval": 3,
-      "easeFactor": 2.5,
+      "nextReview": "2026-05-22",
+      "interval": 1,
+      "easeFactor": 2.35,
       "repetitions": 2
     },
     {
       "id": 11,
       "english": "offentlig",
       "swedish": "public",
-      "nextReview": "2026-05-21",
-      "interval": 3,
+      "nextReview": "2026-05-28",
+      "interval": 7,
       "easeFactor": 2.5,
-      "repetitions": 2
+      "repetitions": 3
     },
     {
       "id": 13,
       "english": "expenditures, expenses",
       "swedish": "utgifter",
-      "nextReview": "2026-05-21",
-      "interval": 3,
+      "nextReview": "2026-05-28",
+      "interval": 7,
       "easeFactor": 2.5,
-      "repetitions": 2
+      "repetitions": 3
     },
     {
       "id": 14,
       "english": "to carry out / implement",
       "swedish": "att verkställa",
-      "nextReview": "2026-05-21",
-      "interval": 1,
+      "nextReview": "2026-05-24",
+      "interval": 3,
       "easeFactor": 2.2,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 15,
@@ -130,55 +130,55 @@
       "id": 16,
       "english": "peaceful, tranquil",
       "swedish": "rofyllt",
-      "nextReview": "2026-05-21",
+      "nextReview": "2026-05-22",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 17,
       "english": "restful",
       "swedish": "vilsamt",
-      "nextReview": "2026-05-21",
+      "nextReview": "2026-05-22",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 18,
       "english": "delighted by, fond of",
       "swedish": "förtjusta i",
-      "nextReview": "2026-05-21",
+      "nextReview": "2026-05-22",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 19,
       "english": "secluded, private, isolated",
       "swedish": "avskild",
-      "nextReview": "2026-05-21",
+      "nextReview": "2026-05-22",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 20,
       "english": "forest clearing",
       "swedish": "skogsglänta",
-      "nextReview": "2026-05-21",
+      "nextReview": "2026-05-22",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 21,
       "english": "honorable man, man of integrity",
       "swedish": "hedersman",
-      "nextReview": "2026-05-21",
+      "nextReview": "2026-05-22",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     }
   ],
   "nextId": 22
