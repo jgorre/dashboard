@@ -179,7 +179,34 @@
       "interval": 1,
       "easeFactor": 2.5,
       "repetitions": 1
+    },
+    {
+      "id": 22,
+      "english": "to depict, portray",
+      "swedish": "att skildra",
+      "nextReview": "2026-05-22",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 23,
+      "english": "strängt",
+      "swedish": "strict, severe",
+      "nextReview": "2026-05-22",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 24,
+      "english": "punished",
+      "swedish": "straffad",
+      "nextReview": "2026-05-22",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 22
+  "nextId": 25
 }
