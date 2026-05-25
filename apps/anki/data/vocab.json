@@ -206,7 +206,70 @@
       "interval": 1,
       "easeFactor": 2.5,
       "repetitions": 1
+    },
+    {
+      "id": 25,
+      "english": "argument, quarrel",
+      "swedish": "gräl",
+      "nextReview": "2026-05-25",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 26,
+      "english": "divorce",
+      "swedish": "skilsmässa",
+      "nextReview": "2026-05-25",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 27,
+      "english": "crusade",
+      "swedish": "korståg",
+      "nextReview": "2026-05-25",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 28,
+      "english": "blacksmith",
+      "swedish": "smed",
+      "nextReview": "2026-05-25",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 29,
+      "english": "fortress, castle",
+      "swedish": "borg",
+      "nextReview": "2026-05-25",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 30,
+      "english": "utantill",
+      "swedish": "by heart, from memory",
+      "nextReview": "2026-05-25",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 31,
+      "english": "delay, postponement",
+      "swedish": "uppskov",
+      "nextReview": "2026-05-25",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 25
+  "nextId": 32
 }
