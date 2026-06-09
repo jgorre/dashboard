@@ -269,7 +269,16 @@
       "interval": 1,
       "easeFactor": 2.35,
       "repetitions": 0
+    },
+    {
+      "id": 32,
+      "english": "to doubt",
+      "swedish": "att tvivla",
+      "nextReview": "2026-06-09",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 32
+  "nextId": 33
 }
