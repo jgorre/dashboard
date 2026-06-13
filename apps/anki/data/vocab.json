@@ -92,8 +92,8 @@
     },
     {
       "id": 11,
-      "english": "offentlig",
-      "swedish": "public",
+      "swedish": "offentlig",
+      "english": "public",
       "nextReview": "2026-06-18",
       "interval": 14,
       "easeFactor": 2.5,
@@ -191,8 +191,8 @@
     },
     {
       "id": 23,
-      "english": "strängt",
-      "swedish": "strict, severe",
+      "english": "strict, severe",
+      "swedish": "strängt",
       "nextReview": "2026-06-25",
       "interval": 14,
       "easeFactor": 2.5,
@@ -254,8 +254,8 @@
     },
     {
       "id": 30,
-      "english": "utantill",
-      "swedish": "by heart, from memory",
+      "english": "by heart, from memory",
+      "swedish": "utantill",
       "nextReview": "2026-06-14",
       "interval": 1,
       "easeFactor": 2.0500000000000003,
