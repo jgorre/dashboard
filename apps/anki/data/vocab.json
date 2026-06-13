@@ -278,7 +278,61 @@
       "interval": 1,
       "easeFactor": 2.0500000000000003,
       "repetitions": 0
+    },
+    {
+      "id": 33,
+      "english": "semiconductor",
+      "swedish": "halvledare",
+      "nextReview": "2026-06-13",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 34,
+      "english": "furious, enraged",
+      "swedish": "ursinnig",
+      "nextReview": "2026-06-13",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 35,
+      "english": "to despise, to loathe",
+      "swedish": "att avskydda",
+      "nextReview": "2026-06-13",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 36,
+      "english": "supply chains",
+      "swedish": "försörjningskedjor",
+      "nextReview": "2026-06-13",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 37,
+      "english": "enormously, tremendously, extremely",
+      "swedish": "oerhört",
+      "nextReview": "2026-06-13",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 38,
+      "english": "substantial, significant, essential",
+      "swedish": "väsentlig",
+      "nextReview": "2026-06-13",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 33
+  "nextId": 39
 }
