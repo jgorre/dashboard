@@ -202,28 +202,28 @@
       "id": 24,
       "english": "punished",
       "swedish": "straffad",
-      "nextReview": "2026-06-16",
-      "interval": 7,
+      "nextReview": "2026-06-30",
+      "interval": 14,
       "easeFactor": 2.5,
-      "repetitions": 3
+      "repetitions": 4
     },
     {
       "id": 25,
       "english": "argument, quarrel",
       "swedish": "gräl",
-      "nextReview": "2026-06-16",
-      "interval": 3,
+      "nextReview": "2026-06-23",
+      "interval": 7,
       "easeFactor": 2.2,
-      "repetitions": 2
+      "repetitions": 3
     },
     {
       "id": 26,
       "english": "divorce",
       "swedish": "skilsmässa",
-      "nextReview": "2026-06-16",
-      "interval": 3,
+      "nextReview": "2026-06-23",
+      "interval": 7,
       "easeFactor": 2.2,
-      "repetitions": 2
+      "repetitions": 3
     },
     {
       "id": 27,
@@ -265,100 +265,100 @@
       "id": 31,
       "english": "delay, postponement",
       "swedish": "uppskov",
-      "nextReview": "2026-06-16",
-      "interval": 3,
+      "nextReview": "2026-06-23",
+      "interval": 7,
       "easeFactor": 2.2,
-      "repetitions": 2
+      "repetitions": 3
     },
     {
       "id": 32,
       "english": "to doubt",
       "swedish": "att tvivla",
-      "nextReview": "2026-06-16",
-      "interval": 1,
+      "nextReview": "2026-06-19",
+      "interval": 3,
       "easeFactor": 2.0500000000000003,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 33,
       "english": "semiconductor",
       "swedish": "halvledare",
-      "nextReview": "2026-06-16",
-      "interval": 1,
+      "nextReview": "2026-06-19",
+      "interval": 3,
       "easeFactor": 2.5,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 34,
       "english": "furious, enraged",
       "swedish": "ursinnig",
-      "nextReview": "2026-06-16",
-      "interval": 1,
+      "nextReview": "2026-06-19",
+      "interval": 3,
       "easeFactor": 2.5,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 35,
       "english": "to despise, to loathe",
       "swedish": "att avskydda",
-      "nextReview": "2026-06-16",
-      "interval": 1,
+      "nextReview": "2026-06-19",
+      "interval": 3,
       "easeFactor": 2.5,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 36,
       "english": "supply chains",
       "swedish": "försörjningskedjor",
-      "nextReview": "2026-06-16",
-      "interval": 1,
+      "nextReview": "2026-06-19",
+      "interval": 3,
       "easeFactor": 2.5,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 37,
       "english": "enormously, tremendously, extremely",
       "swedish": "oerhört",
-      "nextReview": "2026-06-16",
-      "interval": 1,
+      "nextReview": "2026-06-19",
+      "interval": 3,
       "easeFactor": 2.5,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 38,
       "english": "substantial, significant, essential",
       "swedish": "väsentlig",
-      "nextReview": "2026-06-16",
-      "interval": 1,
+      "nextReview": "2026-06-19",
+      "interval": 3,
       "easeFactor": 2.5,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 39,
       "english": "avalance",
       "swedish": "lavin",
-      "nextReview": "2026-06-16",
+      "nextReview": "2026-06-17",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 40,
       "english": "to encourage, hype up, cheer up",
       "swedish": "att peppa",
-      "nextReview": "2026-06-16",
+      "nextReview": "2026-06-17",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 41,
       "english": "seen",
       "swedish": "sedda",
-      "nextReview": "2026-06-16",
+      "nextReview": "2026-06-17",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     }
   ],
   "nextId": 42
