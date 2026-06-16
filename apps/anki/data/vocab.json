@@ -332,7 +332,34 @@
       "interval": 1,
       "easeFactor": 2.5,
       "repetitions": 1
+    },
+    {
+      "id": 39,
+      "english": "avalance",
+      "swedish": "lavin",
+      "nextReview": "2026-06-16",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 40,
+      "english": "to encourage, hype up, cheer up",
+      "swedish": "att peppa",
+      "nextReview": "2026-06-16",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 41,
+      "english": "seen",
+      "swedish": "sedda",
+      "nextReview": "2026-06-16",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 39
+  "nextId": 42
 }
