@@ -359,7 +359,25 @@
       "interval": 1,
       "easeFactor": 2.5,
       "repetitions": 1
+    },
+    {
+      "id": 42,
+      "english": "customs, traditions",
+      "swedish": "seder",
+      "nextReview": "2026-06-17",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 43,
+      "english": "vast, sprawling",
+      "swedish": "milsvida",
+      "nextReview": "2026-06-17",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 42
+  "nextId": 44
 }
