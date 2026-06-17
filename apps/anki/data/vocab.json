@@ -337,46 +337,46 @@
       "id": 39,
       "english": "avalance",
       "swedish": "lavin",
-      "nextReview": "2026-06-17",
-      "interval": 1,
+      "nextReview": "2026-06-20",
+      "interval": 3,
       "easeFactor": 2.5,
-      "repetitions": 1
+      "repetitions": 2
     },
     {
       "id": 40,
       "english": "to encourage, hype up, cheer up",
       "swedish": "att peppa",
-      "nextReview": "2026-06-17",
+      "nextReview": "2026-06-18",
       "interval": 1,
-      "easeFactor": 2.5,
+      "easeFactor": 2.35,
       "repetitions": 1
     },
     {
       "id": 41,
       "english": "seen",
       "swedish": "sedda",
-      "nextReview": "2026-06-17",
+      "nextReview": "2026-06-18",
       "interval": 1,
-      "easeFactor": 2.5,
+      "easeFactor": 2.35,
       "repetitions": 1
     },
     {
       "id": 42,
       "english": "customs, traditions",
       "swedish": "seder",
-      "nextReview": "2026-06-17",
+      "nextReview": "2026-06-18",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     },
     {
       "id": 43,
       "english": "vast, sprawling",
       "swedish": "milsvida",
-      "nextReview": "2026-06-17",
+      "nextReview": "2026-06-18",
       "interval": 1,
       "easeFactor": 2.5,
-      "repetitions": 0
+      "repetitions": 1
     }
   ],
   "nextId": 44
