@@ -377,7 +377,34 @@
       "interval": 7,
       "easeFactor": 2.35,
       "repetitions": 3
+    },
+    {
+      "id": 44,
+      "english": "countryside",
+      "swedish": "landsbygden",
+      "nextReview": "2026-07-07",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 45,
+      "english": "(to cut, break) in two",
+      "swedish": "mitt itu",
+      "nextReview": "2026-07-07",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 46,
+      "english": "originally from",
+      "swedish": "ursprungligen",
+      "nextReview": "2026-07-07",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 44
+  "nextId": 47
 }
