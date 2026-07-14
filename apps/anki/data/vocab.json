@@ -422,7 +422,25 @@
       "interval": 1,
       "easeFactor": 2.5,
       "repetitions": 0
+    },
+    {
+      "id": 49,
+      "english": "wise",
+      "swedish": "klok",
+      "nextReview": "2026-07-14",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 50,
+      "english": "leadership",
+      "swedish": "ledarskap",
+      "nextReview": "2026-07-14",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 49
+  "nextId": 51
 }
