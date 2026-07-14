@@ -404,7 +404,25 @@
       "interval": 3,
       "easeFactor": 2.5,
       "repetitions": 2
+    },
+    {
+      "id": 47,
+      "english": "simplify",
+      "swedish": "att förenkla",
+      "nextReview": "2026-07-14",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
+    },
+    {
+      "id": 48,
+      "english": "oversimplify",
+      "swedish": "att överförenkla",
+      "nextReview": "2026-07-14",
+      "interval": 1,
+      "easeFactor": 2.5,
+      "repetitions": 0
     }
   ],
-  "nextId": 47
+  "nextId": 49
 }
